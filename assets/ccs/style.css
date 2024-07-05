@@ -1,0 +1,109 @@
+.container {
+  display: grid;
+  grid-template-rows: 15% 1fr 10%;
+  grid-template-columns: 170px 1fr;
+  padding: 10px;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  gap: 10px;
+}
+header {
+  grid-area: header;
+  background-color: rgb(49, 46, 46);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  grid-area: aside;
+  background-color: gray;
+  text-align: left;
+  padding: 10px;
+}
+main {
+  grid-area: main;
+  padding: 20px;
+}
+footer {
+  grid-area: footer;
+  padding: 10px;
+  color: white;
+  background-color: rgb(71, 68, 68);
+  text-align: center;
+}
+/* -----Header  ------*/
+h1 {
+  font-family: sans-serif;
+  color: white;
+  font-style: italic;
+  font-size: 50px;
+  transition: 0.5s;
+}
+h1:hover {
+  transform: scale(1.5);
+}
+/* -----Aside ------*/
+.container-aside {
+  display: flex;
+  flex-direction: column;
+}
+.container-aside h5 {
+  font-size: 20px;
+  transition: 1.5s;
+}
+.titulo-aside h5 :hover {
+  font-weight: bold;
+}
+.list-aside {
+  list-style: none;
+  text-align: justify;
+  padding: 0;
+}
+
+/* -----Main -------*/
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+.product-card {
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 350px;
+}
+.img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h5 {
+  margin: 0;
+  padding: 0;
+}
+/* ------Footer ---*/
+.container-footer {
+  transition: 1.5;
+}
+footer :hover {
+  font-weight: bold;
+}
+/* ------Botton ------*/
+.container-button {
+  padding: 20px;
+}
+.button {
+  transition: 0.5s;
+}
