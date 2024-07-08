@@ -102,8 +102,12 @@ footer :hover {
 }
 /* ------Botton ------*/
 .container-button {
-  padding: 20px;
+  padding: 10px;
 }
 .button {
-  transition: 0.5s;
+  padding: 0;
+  margin: 0;
+}
+.button :hover {
+  transform: scale(1.5);
 }
